@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import "./Contact.css";
 const [hoNavActive, setHoNavActive] = useState(false);
-const App = () => {
+const Contact = () => {
  
 
   useEffect(() => {
@@ -145,4 +145,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Contact;
