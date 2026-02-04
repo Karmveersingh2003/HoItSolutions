@@ -24,7 +24,8 @@ const Contact = () => {
   return (
     <div className="ho-main-wrapper">
       
-    
+    <div className={`ho-main-wrapper ${hoNavActive ? "active" : ""}`}/>
+
 
       {/* --- CONTACT HERO SECTION --- */}
       <section id="ho-contact" className="ho-contact-section">
@@ -113,9 +114,9 @@ const Contact = () => {
                 <div className="ho-social-strip">
                   <p>Follow Us:</p>
                   <div className="ho-social-icons">
-                    <a href="#" className="ho-s-icon"><FaLinkedin /></a>
-                    <a href="#" className="ho-s-icon"><FaWhatsapp /></a>
-                    <a href="#" className="ho-s-icon"><FaInstagram /></a>
+                    <a href="https://wa.me/9636570297" className="ho-s-icon"><FaLinkedin /></a>
+                    <a href="https://wa.me/9636570297" className="ho-s-icon"><FaWhatsapp /></a>
+                    <a href="https://wa.me/9636570297" className="ho-s-icon"><FaInstagram /></a>
                   </div>
                 </div>
               </div>
@@ -131,6 +132,7 @@ const Contact = () => {
           <h3>Location: Rajasthan, Code: 08</h3>
         </div>
         <iframe 
+         title="HO IT Solutions Office Location Map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.87654321!2d75.8123456!3d26.9123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDU0JzQ0LjQiTiA3NcKwNDgnNDQuNCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
           width="100%" 
           height="450" 
