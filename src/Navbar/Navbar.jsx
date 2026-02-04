@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { 
-  FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaUserTie, 
-  FaBuilding, FaPaperPlane, FaBars, FaTimes, 
-  FaLinkedin, FaWhatsapp, FaInstagram 
+ 
+ FaBars, FaTimes, 
+  
 } from "react-icons/fa";
 export default function Navbar() {
       const [hoNavActive, setHoNavActive] = useState(false);
