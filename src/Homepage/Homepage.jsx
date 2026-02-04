@@ -22,7 +22,7 @@ import {
 } from "react-icons/fa";
 import Ap from './Ap.jpeg'
 import "./Homepage.css";
- const [scrolled, setScrolled] = useState(false);
+
 const services = [
     {
       title: "Advanced Networking",
@@ -58,7 +58,7 @@ const services = [
 
 const Home = () => {
 
-
+ const [scrolled, setScrolled] = useState(false);
   // Initialize Animations and Scroll Listener
   useEffect(() => {
     AOS.init({
