@@ -7,9 +7,9 @@ import {
   FaLinkedin, FaWhatsapp, FaInstagram 
 } from "react-icons/fa";
 import "./Contact.css";
-const [hoNavActive, setHoNavActive] = useState(false);
+
 const Contact = () => {
- 
+ const [hoNavActive, setHoNavActive] = useState(false);
 
   useEffect(() => {
     AOS.init({ duration: 1200, once: false });
