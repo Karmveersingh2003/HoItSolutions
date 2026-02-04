@@ -5,11 +5,11 @@ import {
   FaCheckCircle, 
   FaRocket, 
   FaQuoteLeft, 
-  FaSignature, 
+
   FaLinkedin,
   FaShieldAlt,
   FaCogs,
-  FaGlobe,
+ 
   FaUsers
 } from "react-icons/fa";
 import "./About.css";
