@@ -2,15 +2,14 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { 
-  FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaUserTie, 
-  FaBuilding, FaPaperPlane, FaBars, FaTimes, 
+  FaEnvelope, FaMapMarkerAlt, FaUserTie, 
+  FaBuilding, FaPaperPlane, 
   FaLinkedin, FaWhatsapp, FaInstagram 
 } from "react-icons/fa";
 import "./Contact.css";
 
 const App = () => {
-  const [hoNavActive, setHoNavActive] = useState(false);
-  const [hoMobileOpen, setHoMobileOpen] = useState(false);
+ 
 
   useEffect(() => {
     AOS.init({ duration: 1200, once: false });
