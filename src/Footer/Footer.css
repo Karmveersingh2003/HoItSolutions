@@ -1,0 +1,276 @@
+/* --- FOOTER WRAPPER --- */
+.ho-footer-wrapper {
+  position: relative;
+  background-color: #ffffff;
+  padding-top: 100px; /* Space for the curve */
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+/* --- THE CURVE EFFECT --- */
+.ho-footer-curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.ho-footer-curve svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 120px;
+}
+
+.ho-curve-fill {
+  fill: #f8faff; /* Very light blue to differentiate from background */
+}
+
+/* --- CONTAINER & GRID --- */
+.ho-footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 5%;
+  position: relative;
+  z-index: 2;
+  background: #f8faff;
+}
+
+.ho-footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  gap: 40px;
+  padding-bottom: 60px;
+}
+
+/* --- COLUMN STYLING --- */
+.ho-footer-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.ho-footer-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 40px;
+  height: 4px;
+  background: linear-gradient(90deg, #0056b3, #00d2ff);
+  border-radius: 2px;
+}
+
+/* Brand Column */
+.ho-logo-main {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #0056b3;
+}
+
+.ho-logo-sub {
+  font-size: 1.4rem;
+  color: #333;
+  margin-left: 5px;
+}
+
+.ho-brand-desc {
+  margin-top: 20px;
+  color: #64748b;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  max-width: 320px;
+}
+
+/* Social Icons */
+.ho-social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.ho-social-item {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  color: #0056b3;
+  font-size: 1.2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+
+.ho-social-item:hover {
+  background: #0056b3;
+  color: #fff;
+  transform: translateY(-5px) rotate(8deg);
+}
+
+/* List Items */
+.ho-footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.ho-footer-list li {
+  margin-bottom: 15px;
+}
+
+.ho-footer-list li a {
+  text-decoration: none;
+  color: #64748b;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.ho-list-icon {
+  font-size: 0.7rem;
+  color: #00d2ff;
+}
+
+.ho-footer-list li a:hover {
+  color: #0056b3;
+  padding-left: 8px;
+}
+
+/* Contact Info */
+.ho-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ho-contact-item {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.ho-contact-icon {
+  color: #0056b3;
+  font-size: 1.2rem;
+  margin-top: 4px;
+}
+
+.ho-phones, .ho-emails {
+  display: flex;
+  flex-direction: column;
+}
+
+.ho-contact-item a, .ho-contact-item span {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.ho-contact-item a:hover {
+  color: #00d2ff;
+}
+
+/* --- FOOTER BOTTOM BAR --- */
+.ho-footer-bottom {
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding: 30px 0;
+}
+
+.ho-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ho-copyright {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.ho-highlight {
+  color: #0056b3;
+  font-weight: 700;
+}
+
+.ho-director {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+/* GST Badge */
+.ho-gst-pill {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 1024px) {
+  .ho-footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ho-footer-curve svg {
+    height: 60px;
+  }
+  
+  .ho-footer-wrapper {
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .ho-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .ho-footer-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .ho-brand-desc {
+    margin: 20px auto;
+  }
+
+  .ho-social-links {
+    justify-content: center;
+  }
+
+  .ho-footer-list li a {
+    justify-content: center;
+  }
+
+  .ho-contact-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ho-bottom-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
