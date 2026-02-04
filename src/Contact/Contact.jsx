@@ -7,7 +7,7 @@ import {
   FaLinkedin, FaWhatsapp, FaInstagram 
 } from "react-icons/fa";
 import "./Contact.css";
-
+const [hoNavActive, setHoNavActive] = useState(false);
 const App = () => {
  
 
