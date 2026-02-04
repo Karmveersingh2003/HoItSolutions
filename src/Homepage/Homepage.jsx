@@ -9,17 +9,14 @@ import {
   FaFingerprint, 
   FaPhoneAlt, 
   FaVolumeUp, 
-  FaBars, 
-  FaTimes, 
+ 
   FaCheckCircle,
   FaArrowRight,
-  FaMapMarkerAlt,
-  FaEnvelope,
-   FaServer,
-  FaHeadset,
+ 
+ 
   FaMicrochip,
   FaRocket,
-  FaCogs,
+ 
   FaShieldAlt,
 
 } from "react-icons/fa";
