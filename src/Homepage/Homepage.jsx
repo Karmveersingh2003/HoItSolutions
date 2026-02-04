@@ -23,39 +23,6 @@ import {
 import Ap from './Ap.jpeg'
 import "./Homepage.css";
 
-const services = [
-    {
-      title: "Advanced Networking",
-      desc: "Enterprise-grade switching, routing, and fiber optics for zero-latency connectivity.",
-      icon: <FaNetworkWired />,
-    },
-    {
-      title: "AI Surveillance",
-      desc: "4K CCTV with facial recognition, night vision, and cloud-based remote monitoring.",
-      icon: <FaVideo />,
-    },
-    {
-      title: "Fire Safety",
-      desc: "Smart smoke detection and auto-suppression systems to protect assets and life.",
-      icon: <FaFire />,
-    },
-    {
-      title: "Biometric Security",
-      desc: "Retina, Face ID & Fingerprint access control for secure restricted areas.",
-      icon: <FaFingerprint />,
-    },
-    {
-      title: "Smart Intercom",
-      desc: "Video door phones and EPBX communication systems for complexes and offices.",
-      icon: <FaPhoneAlt />,
-    },
-    {
-      title: "Pro Audio",
-      desc: "Acoustic solutions and PA systems designed for clear multi-zone announcements.",
-      icon: <FaVolumeUp />,
-    },
-  ];
-
 const Home = () => {
 
  const [scrolled, setScrolled] = useState(false);
@@ -115,7 +82,8 @@ const Home = () => {
   return (
     <div className="app-container">
    
-  
+  <div className={`homepage ${scrolled ? "scrolled" : ""}`}/>
+
       {/* 1. SUPER HERO SECTION */}
       <section className="super-hero">
         <div className="hero-bg-overlay"></div>
