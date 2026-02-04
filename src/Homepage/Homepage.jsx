@@ -56,8 +56,7 @@ const services = [
   ];
 
 const Home = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+
 
   // Initialize Animations and Scroll Listener
   useEffect(() => {
@@ -76,7 +75,7 @@ const Home = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
 
   // Service Data
   const services = [
