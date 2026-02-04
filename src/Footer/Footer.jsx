@@ -35,9 +35,9 @@ const Footer = () => {
               CCTV Surveillance, and Smart Automation solutions.
             </p>
             <div className="ho-social-links">
-              <a href="#" className="ho-social-item ho-fb"><FaLinkedinIn /></a>
+              <a href="https://wa.me/9636570297" className="ho-social-item ho-fb"><FaLinkedinIn /></a>
               <a href="https://wa.me/9636570297" className="ho-social-item ho-wa"><FaWhatsapp /></a>
-              <a href="#" className="ho-social-item ho-ig"><FaInstagram /></a>
+              <a href="https://wa.me/9636570297" className="ho-social-item ho-ig"><FaInstagram /></a>
             </div>
           </div>
 
@@ -47,7 +47,7 @@ const Footer = () => {
             <ul className="ho-footer-list">
               <li><a href="/home"><FaChevronRight className="ho-list-icon" /> Home</a></li>
               <li><a href="/about"><FaChevronRight className="ho-list-icon" /> About Us</a></li>
-              <li><a href="#ho-services"><FaChevronRight className="ho-list-icon" /> Our Services</a></li>
+              <li><a href="https://wa.me/9636570297ho-services"><FaChevronRight className="ho-list-icon" /> Our Services</a></li>
               <li><a href="/contact"><FaChevronRight className="ho-list-icon" /> Contact Page</a></li>
             </ul>
           </div>
@@ -56,10 +56,10 @@ const Footer = () => {
           <div className="ho-footer-col">
             <h4 className="ho-footer-title">Expertise</h4>
             <ul className="ho-footer-list">
-              <li><a href="#"><FaChevronRight className="ho-list-icon" /> CCTV Security</a></li>
-              <li><a href="#"><FaChevronRight className="ho-list-icon" /> IT Networking</a></li>
-              <li><a href="#"><FaChevronRight className="ho-list-icon" /> Biometrics</a></li>
-              <li><a href="#"><FaChevronRight className="ho-list-icon" /> Fire Alarms</a></li>
+              <li><a href="https://wa.me/9636570297"><FaChevronRight className="ho-list-icon" /> CCTV Security</a></li>
+              <li><a href="https://wa.me/9636570297"><FaChevronRight className="ho-list-icon" /> IT Networking</a></li>
+              <li><a href="https://wa.me/9636570297"><FaChevronRight className="ho-list-icon" /> Biometrics</a></li>
+              <li><a href="https://wa.me/9636570297"><FaChevronRight className="ho-list-icon" /> Fire Alarms</a></li>
             </ul>
           </div>
 
